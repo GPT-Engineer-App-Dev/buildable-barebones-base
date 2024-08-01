@@ -22,7 +22,10 @@ const Index = () => {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
           />
-          <Button onClick={() => alert(`You entered: ${inputValue}`)}>
+          <Button 
+            onClick={() => alert(`You entered: ${inputValue}`)}
+            className="bg-green-500 hover:bg-green-600 text-white"
+          >
             Submit
           </Button>
         </div>
